@@ -1,0 +1,125 @@
+/*
+Colors used:
+Primary Color (Black): #000000;
+Secondary Color (Purple): #A49BC2;
+*/
+
+body {
+    background-color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #A49BC2;
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+}
+
+a:visited {
+    /* visited link */
+    color: #B8AFBF;
+}
+
+a:active {
+    /* selected link */
+    color: #8C749B;
+}
+
+a:hover,
+a:focus {
+    color: #000000;
+    text-decoration: underline;
+}
+
+#hero {
+
+}
+
+
+
+
+/* buttons stay at the end */
+.button {
+    display: inline-block;
+    background-color: #A49BC2;
+    color: #000000;
+    /* needed to override the default link color */
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 2px solid #000000;
+    /* width of the border, type, color */
+    transition: 0.2s opacity;
+}
+
+.button:hover {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+
+.button:active {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #000000;
+  }
+  .button.contact:hover {
+    background-color: #A49BC2;
+    color: #000000;
+  }
+
+.button:active { 
+    opacity: 0.8;
+}
