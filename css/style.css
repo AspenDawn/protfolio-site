@@ -77,10 +77,33 @@ a:focus {
 }
 
 #hero {
+    background-color: lightgray;
 
 }
 
+#work {
+    background-color: lightblue;
+}
 
+#contact {
+    background-color: pink;
+}
+
+#intro { 
+    background-color: lightgreen;
+}
+
+#process {background-color: aqua;}
+
+#conclusion {
+    background-color:lightskyblue;
+}
+
+#about {background-color: lightgray;}
+
+#skills {
+    background-color: aquamarine;
+}
 
 
 /* buttons stay at the end */
