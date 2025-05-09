@@ -4,6 +4,10 @@ Primary Color (Black): #000000;
 Secondary Color (Purple): #A49BC2;
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
     font-family: "Nunito", sans-serif;
@@ -15,7 +19,20 @@ body {
     color: #000000;
 }
 
-
+header {
+    background-color: #ffffff;
+    padding: none;
+    margin: none;
+    border-bottom: 3px solid #4a4a4a;
+    width: [object Object]px;
+    height: [object Object]px;
+    background: #F8F8F8;
+    border: solid #BDBDBD 1px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    position: relative
+}
 
 h1,
 h2,
@@ -78,6 +95,9 @@ a:focus {
 
 #hero {
     background-color: lightgray;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
 
 }
 
@@ -89,19 +109,23 @@ a:focus {
     background-color: pink;
 }
 
-#intro { 
+#intro {
     background-color: lightgreen;
 }
 
-#process {background-color: aqua;}
-
-#conclusion {
-    background-color:lightskyblue;
+#process {
+    background-color: aqua;
 }
 
-#about {background-color: lightgray;}
+#conclusion {
+    background-color: lightskyblue;
+}
 
-#skills {
+#about {
+    background-color: lightgray;
+}
+
+#tool {
     background-color: aquamarine;
 }
 
@@ -116,6 +140,9 @@ a:focus {
     padding: 10px;
     border-radius: 4px;
     border-bottom: 2px solid #000000;
+
+    margin: 0 auto;
+    /* No spacing to top and bottom and auto spacing to left and right */
     /* width of the border, type, color */
     transition: 0.2s opacity;
 }
@@ -137,12 +164,68 @@ a:focus {
     color: #000000;
     text-transform: uppercase;
     border: 2px solid #000000;
-  }
-  .button.contact:hover {
+}
+
+.button.contact:hover {
     background-color: #A49BC2;
     color: #000000;
-  }
+}
 
-.button:active { 
+.button:active {
     opacity: 0.8;
+}
+
+
+
+
+/*********** Layout styling *********/
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    max-width: 250px;
+    text-align: center;
+
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+
+
+}
+
+footer>svg {
+    transform: 50%;
+    width: 100%;
+    height: auto;
 }
