@@ -224,8 +224,8 @@ nav>ul>li {
 
 }
 
-footer>svg {
-    transform: 50%;
-    width: 100%;
+.social-media-icon {
+    padding-top: 20px;
+    width: 50px;
     height: auto;
 }
