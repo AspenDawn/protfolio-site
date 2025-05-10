@@ -24,8 +24,8 @@ header {
     padding: none;
     margin: none;
     border-bottom: 3px solid #4a4a4a;
-    width: [object Object]px;
-    height: [object Object]px;
+    width: 100%;
+    height: 150px;
     background: #F8F8F8;
     border: solid #BDBDBD 1px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -137,14 +137,17 @@ a:focus {
     color: #000000;
     /* needed to override the default link color */
     font-weight: 700;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 4px;
     border-bottom: 2px solid #000000;
 
     margin: 0 auto;
     /* No spacing to top and bottom and auto spacing to left and right */
     /* width of the border, type, color */
-    transition: 0.2s opacity;
+
+    transition-duration: 0.2s;
+    transition-property: opacity;
+
 }
 
 .button:hover {
@@ -181,7 +184,7 @@ a:focus {
 /*********** Layout styling *********/
 
 .container {
-    padding: 0 15px;
+    padding: 15px 15px;
 }
 
 .row {
@@ -200,23 +203,56 @@ a:focus {
 .logo {
     max-width: 250px;
     text-align: center;
+    background-color: pink;
 
 }
 
 header {
     background-color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 10px;
+
 }
+
+
+.brackets a:before,
+.brackets a:after {
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    top: 100px;
+    transition: all 0.3s;
+}
+
+.brackets a:before {
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+.brackets a:after {
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+.brackets a:hover:before,
+.brackets a:hover:after {
+    opacity: 2;
+    transform: translateX(0px);
+}
+
+
 
 nav>ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
 }
+
 
 nav>ul>li {
     display: inline-block;
-    padding: 0 15px;
+    padding: 5px 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
@@ -228,4 +264,77 @@ nav>ul>li {
     padding-top: 20px;
     width: 50px;
     height: auto;
+
+}
+
+
+
+[class*="col-"] {
+    float: left;
+    padding: 4px;
+}
+
+
+/************ M scrns(640px and lgr)***********/
+@media only screen and (min-width: 640px) {
+
+    header {
+        text-align: unset;
+        padding: 40px 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+        padding: 14px 13px;
+    }
+
+    #hero span {
+        display: block;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #about-page h3 {
+        margin-top: 20;
+    }
+
+}
+
+
+/*************************LG scrns (1024px or lgr)**************************/
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+/***********************XLG scrns (1440px or lgr)**************************/
+@media only screen and (min-width: 1440px) {
+
+
 }
