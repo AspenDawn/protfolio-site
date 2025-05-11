@@ -66,7 +66,7 @@ img {
 }
 
 a {
-    color: #A49BC2;
+    color: black;
     text-decoration: none;
     /* No underlining */
 }
@@ -94,40 +94,14 @@ a:focus {
 }
 
 #hero {
-    background-color: lightgray;
+    
     padding: 20px 0;
     display: inline-block;
     width: 100%;
 
 }
 
-#work {
-    background-color: lightblue;
-}
 
-#contact {
-    background-color: pink;
-}
-
-#intro {
-    background-color: lightgreen;
-}
-
-#process {
-    background-color: aqua;
-}
-
-#conclusion {
-    background-color: lightskyblue;
-}
-
-#about {
-    background-color: lightgray;
-}
-
-#tool {
-    background-color: aquamarine;
-}
 
 
 /****************************** buttons stay at the end *****************************/
@@ -203,7 +177,7 @@ a:focus {
 .logo {
     max-width: 250px;
     text-align: center;
-    background-color: pink;
+    color: #A49BC2;
 
 }
 
@@ -274,6 +248,7 @@ nav>ul>li {
 }
 
 
+
 [class*="col-"] {
     float: left;
     padding: 4px;
@@ -283,15 +258,15 @@ nav>ul>li {
 
 @keyframes color-change {
     from {
-        fill: #edc655;
+        fill: #97D4D7;
     }
 
     to {
-        fill: #f76414;
+        fill: white;
     }
 }
 
-.sun {
+.star {
 
 
     animation-duration: 4s;
@@ -302,38 +277,39 @@ nav>ul>li {
 }
 
 
-@keyframes cloud-move {
+@keyframes rotate01 {
     from {
-        transform: translate(0, 50px);
+        transform: rotatex(25deg);
     }
-
-    to {
-        transform: translate(200px, 50px);
-    }
+    to { transform: rotatez(5deg);}
+    
 }
 
 
-.cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
+.star2 {
+    animation-duration: 10s;
+    animation-name: rotate01;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
 
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
 
-    to {
-        transform: translate(100px, 48px);
-    }
+@keyframes scale01 {
+    50% {scale: 2 1.5;}
+    
+    
 }
 
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+.star3 {
+    position: absolute;
+    animation-duration: 13s;
+    animation-name: scale01;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
 }
+
 
 /************ M scrns(640px and lgr)***********/
 @media only screen and (min-width: 640px) {
@@ -378,11 +354,11 @@ nav>ul>li {
     }
 
     .img-frogship {
-max-width: 290px;
+        min-width: 290px;
 
     }
 
-    .brackets{
+    .brackets {
         width: auto;
     }
 }
@@ -397,13 +373,15 @@ max-width: 290px;
         margin-right: auto;
     }
 
-
-    .img-frogship { 
-        min-width: 480px;
-        
+    .col-lg-8 {
+        width: 50%;
     }
 
-    
+
+    .img-frogship { 
+        min-width: 430;
+    }
+
 
 }
 
