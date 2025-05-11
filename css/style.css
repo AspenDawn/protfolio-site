@@ -130,7 +130,7 @@ a:focus {
 }
 
 
-/* buttons stay at the end */
+/****************************** buttons stay at the end *****************************/
 .button {
     display: inline-block;
     background-color: #A49BC2;
@@ -181,7 +181,7 @@ a:focus {
 
 
 
-/*********** Layout styling *********/
+/********************************** Layout styling *******************************/
 
 .container {
     padding: 15px 15px;
@@ -255,7 +255,7 @@ nav>ul>li {
     padding: 5px 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #4a4a4a;
+    color: #A49BC2;
 
 
 }
@@ -267,6 +267,11 @@ nav>ul>li {
 
 }
 
+.img-frogship {
+
+    width: auto;
+    height: 240px;
+}
 
 
 [class*="col-"] {
@@ -372,6 +377,14 @@ nav>ul>li {
         margin-top: 20;
     }
 
+    .img-frogship {
+max-width: 290px;
+
+    }
+
+    .brackets{
+        width: auto;
+    }
 }
 
 
@@ -383,6 +396,14 @@ nav>ul>li {
         margin-left: auto;
         margin-right: auto;
     }
+
+
+    .img-frogship { 
+        min-width: 480px;
+        
+    }
+
+    
 
 }
 
