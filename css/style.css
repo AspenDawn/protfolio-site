@@ -374,7 +374,7 @@ nav>ul>li {
     }
 
     .col-lg-8 {
-        width: 50%;
+        width: 66%;
     }
 
 
@@ -387,5 +387,3 @@ nav>ul>li {
 
 
 
-/***********************XLG scrns (1440px or lgr)**************************/
-@media only screen and (min-width: 1440px) {}
