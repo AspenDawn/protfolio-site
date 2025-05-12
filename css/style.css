@@ -243,22 +243,19 @@ nav>ul>li {
 
 .img-frogship {
 
-    width: auto;
-    height: 240px;
+    width: 100%;
+    
 }
 
 
 
-[class*="col-"] {
-    float: left;
-    padding: 4px;
-}
+
 
 /*********************** svg animation **********************/
 
 @keyframes color-change {
     from {
-        fill: #97D4D7;
+        fill: cyan;
     }
 
     to {
@@ -279,9 +276,9 @@ nav>ul>li {
 
 @keyframes rotate01 {
     from {
-        transform: rotatex(25deg);
+        transform: rotatez(40deg);
     }
-    to { transform: rotatez(5deg);}
+    to { transform: rotatey(5deg);}
     
 }
 
@@ -313,6 +310,12 @@ nav>ul>li {
 
 /************ M scrns(640px and lgr)***********/
 @media only screen and (min-width: 640px) {
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
 
     header {
         text-align: unset;
@@ -353,14 +356,13 @@ nav>ul>li {
         margin-top: 20;
     }
 
-    .img-frogship {
-        min-width: 290px;
-
-    }
+   
 
     .brackets {
         width: auto;
     }
+
+
 }
 
 
@@ -373,14 +375,17 @@ nav>ul>li {
         margin-right: auto;
     }
 
-    .col-lg-8 {
-        width: 66%;
+    .col-lg-7 {
+        width: 60%;
+    }
+
+    .col-lg-5 {
+        width: 40%;
+        
     }
 
 
-    .img-frogship { 
-        min-width: 430;
-    }
+   
 
 
 }
