@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/9856e75013.js" crossorigin="anonymous"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -26,16 +27,22 @@
     <header>
         <div class="container">
 
-            <a href="index.html" class="logo">Aspen Dawn Concha</a>
+            <div class="navtoggle" id="myNavtoggle">
+
+                <a href="index.html" class="logo">Aspen Dawn Concha</a>
 
 
-            <nav class="brackets">
-                <ul>
-                    <li><a href="varietea.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+                <nav class="brackets">
+                    <ul>
+                        <li><a href="varietea.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a onclick="menuToggle()" href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+
+                    </ul>
+                </nav>
+            </div>
 
         </div>
     </header>
@@ -260,7 +267,7 @@
 
                     </div>
 
-                    
+
                 </div>
 
             </div>

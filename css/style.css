@@ -21,17 +21,21 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: none;
+    padding: 10px 0 4px;
     margin: none;
     border-bottom: 3px solid #4a4a4a;
     width: 100%;
-    height: 150px;
+    height: 100px;
     background: #F8F8F8;
     border: solid #BDBDBD 1px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     position: relative
+}
+
+main {
+    padding-top: 20px;
 }
 
 h1,
@@ -94,7 +98,7 @@ a:focus {
 }
 
 #hero {
-    
+
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -170,72 +174,80 @@ a:focus {
     text-align: center;
 }
 
-.center {
-    text-align: center;
-}
+
 
 .logo {
-    font-size: 1.5em ;
+    font-size: 1.5em;
     text-align: center;
     color: #A49BC2;
+    max-width: 150px;
+    min-width: 641px;
 
 }
 
 header {
     background-color: #ffffff;
-    text-align: center;
     padding: 10px 10px;
 
 }
 
-/******************** brackets *************************/
-.brackets a{
-position: relative;
-}
-
-.brackets a:before,
-.brackets a:after {
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    transition: all 0.3s;
-}
-
-.brackets a:before {
-    content: '(';
-    left: 0px;
-    transform: translateX(10px);
-}
-
-.brackets a:after {
-    content: ')';
-    right: 0px;
-    transform: translateX(-10px);
-}
-
-.brackets a:hover:before,
-.brackets a:hover:after {
-    opacity: 2;
-    transform: translateX(0px);
-}
 
 
+/******************** navigation *************************/
 
 nav>ul {
     list-style-type: none;
     padding: 10px;
+    margin: 0;
 }
 
 
 nav>ul>li {
-    display: inline-block;
     padding: 5px 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #A49BC2;
 
-
 }
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 3px dotted #A49BC2;
+    background-color: #ffffff;
+    w
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
+
+/*********************** icons/imgs **********************/
+
 
 .social-media-icon {
     padding-top: 20px;
@@ -247,11 +259,8 @@ nav>ul>li {
 .img-frogship {
 
     width: 100%;
-    
+
 }
-
-
-
 
 
 /*********************** svg animation **********************/
@@ -281,8 +290,11 @@ nav>ul>li {
     from {
         transform: rotatez(40deg);
     }
-    to { transform: rotatey(5deg);}
-    
+
+    to {
+        transform: rotatey(5deg);
+    }
+
 }
 
 
@@ -296,9 +308,11 @@ nav>ul>li {
 
 
 @keyframes scale01 {
-    50% {scale: 2 1.5;}
-    
-    
+    50% {
+        scale: 2 1.5;
+    }
+
+
 }
 
 .star3 {
@@ -311,7 +325,7 @@ nav>ul>li {
 }
 
 
-/************ M scrns(640px and lgr)***********/
+/****************************** M scrns(640px and lgr)**********************************/
 @media only screen and (min-width: 640px) {
 
     [class*="col-"] {
@@ -321,8 +335,50 @@ nav>ul>li {
 
 
     header {
+        height: 150px;
         text-align: unset;
         padding: 40px 13px;
+    }
+
+
+    /**************** brackets ******************/
+
+
+    .brackets a {
+        position: relative;
+        
+    }
+
+    .brackets a:before,
+    .brackets a:after {
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        transition: all 0.3s;
+        color: #A49BC2;
+    }
+
+    .brackets a:before {
+        content: '(';
+        left: 0px;
+        transform: translateX(-10px);
+    }
+
+    .brackets a:after {
+        content: ')';
+        right: 0px;
+        transform: translateX(10px);
+    }
+
+    .brackets a:hover:before {
+        opacity: 2;
+        transform: translateX(-11px);
+    }
+
+     
+    .brackets a:hover:after {
+        opacity: 2;
+        transform: translateX(11px);
     }
 
     nav {
@@ -332,8 +388,24 @@ nav>ul>li {
         padding-bottom: 20px;
     }
 
+    nav>ul {
+        margin: 1em 0;
+    }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
     .logo {
-        
+
         padding: 14px 13px;
     }
 
@@ -359,9 +431,9 @@ nav>ul>li {
         margin-top: 20;
     }
 
-   
 
-    
+
+
 
 
 }
@@ -382,14 +454,11 @@ nav>ul>li {
 
     .col-lg-5 {
         width: 40%;
-        
+
     }
 
 
-   
+
 
 
 }
-
-
-
