@@ -104,7 +104,7 @@ a:focus {
 
 
 
-/****************************** buttons stay at the end *****************************/
+/****************************** buttons *****************************/
 .button {
     display: inline-block;
     background-color: #A49BC2;
@@ -175,7 +175,7 @@ a:focus {
 }
 
 .logo {
-    max-width: 250px;
+    font-size: 1.5em ;
     text-align: center;
     color: #A49BC2;
 
@@ -188,13 +188,16 @@ header {
 
 }
 
+/******************** brackets *************************/
+.brackets a{
+position: relative;
+}
 
 .brackets a:before,
 .brackets a:after {
     position: absolute;
     opacity: 0;
     font-size: 20px;
-    top: 100px;
     transition: all 0.3s;
 }
 
@@ -330,7 +333,7 @@ nav>ul>li {
     }
 
     .logo {
-        font-size: 1.2em;
+        
         padding: 14px 13px;
     }
 
@@ -358,9 +361,7 @@ nav>ul>li {
 
    
 
-    .brackets {
-        width: auto;
-    }
+    
 
 
 }
