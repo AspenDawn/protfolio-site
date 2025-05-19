@@ -238,7 +238,7 @@ nav>ul>li {
     padding: 10px 0;
     border-top: 3px dotted #A49BC2;
     background-color: #ffffff;
-    w
+
 }
 
 .navtoggle.responsive li:last-child {
@@ -346,7 +346,7 @@ nav>ul>li {
 
     .brackets a {
         position: relative;
-        
+
     }
 
     .brackets a:before,
@@ -375,7 +375,7 @@ nav>ul>li {
         transform: translateX(-11px);
     }
 
-     
+
     .brackets a:hover:after {
         opacity: 2;
         transform: translateX(11px);
@@ -431,6 +431,9 @@ nav>ul>li {
         margin-top: 20;
     }
 
+  .sefie{
+    max-height: 500px;
+  }
 
 
 
