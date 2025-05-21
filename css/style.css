@@ -108,6 +108,8 @@ a:focus {
 
 
 
+
+
 /****************************** buttons *****************************/
 .button {
     display: inline-block;
@@ -189,6 +191,11 @@ header {
     background-color: #ffffff;
     padding: 10px 10px;
 
+}
+
+footer {
+    padding-inline: 10px;
+    text-align: center;
 }
 
 
