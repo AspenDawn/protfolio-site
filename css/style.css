@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Black): #000000;
-Secondary Color (Purple): #A49BC2;
+Secondary Color (Purple): #7A6EA6;
 */
 
 * {
@@ -113,8 +113,8 @@ a:focus {
 /****************************** buttons *****************************/
 .button {
     display: inline-block;
-    background-color: #A49BC2;
-    color: #000000;
+    background-color: #7A6EA6;
+    color: #ffffff;
     /* needed to override the default link color */
     font-weight: 700;
     padding: 10px 20px;
@@ -150,8 +150,8 @@ a:focus {
 }
 
 .button.contact:hover {
-    background-color: #A49BC2;
-    color: #000000;
+    background-color: #8377AC;
+    color: #ffffff;
 }
 
 .button:active {
@@ -181,7 +181,7 @@ a:focus {
 .logo {
     font-size: 1.5em;
     text-align: center;
-    color: #A49BC2;
+    color: #7A6EA6;
     max-width: 150px;
     min-width: 641px;
 
@@ -213,7 +213,7 @@ nav>ul>li {
     padding: 5px 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #A49BC2;
+    color: #7A6EA6;
 
 }
 
@@ -242,9 +242,11 @@ nav>ul>li {
 
 .navtoggle.responsive li {
     display: block;
-    padding: 10px 0;
-    border-top: 3px dotted #A49BC2;
+    padding: 10px 5px;
+    border-top: 3px dotted #7A6EA6;
     background-color: #ffffff;
+    
+    
 
 }
 
@@ -362,7 +364,7 @@ nav>ul>li {
         opacity: 0;
         font-size: 20px;
         transition: all 0.3s;
-        color: #A49BC2;
+        color: #7A6EA6;
     }
 
     .brackets a:before {
